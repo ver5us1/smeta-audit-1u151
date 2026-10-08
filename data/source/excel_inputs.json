@@ -1,0 +1,48 @@
+{
+  "source_workbook": "Итоговый_расчет.xls",
+  "object": "Установка получения элементарной (газовой) серы 1У-151 Астраханского ГПЗ",
+  "price_level": "01.01.2024",
+  "command_trip": {
+    "duration_months": 10.5,
+    "total_workers": 57,
+    "local_workers": 15,
+    "workers_by_city": {"Москва": 13, "Санкт-Петербург": 13, "Краснодар": 16},
+    "rotation_months": 2,
+    "daily_allowance_rub": 400,
+    "days_per_month": 30.4,
+    "rail_cost_rub": {"Москва": 3229.96183206107, "Санкт-Петербург": 4271.62849872774, "Краснодар": 3180.66157760814},
+    "station_to_accommodation_km": 57.3,
+    "bus_speed_kmh": 49,
+    "bus_machine_hour_rub": 2289.73,
+    "bus_capacity": 32,
+    "accommodation_rub_per_day": 550,
+    "travel_days_one_way": {"Москва": 2, "Санкт-Петербург": 3, "Краснодар": 2}
+  },
+  "worker_transport": {
+    "workers": 61,
+    "duration_months": 10.5,
+    "work_days_per_month": 22,
+    "distance_km": 16.3,
+    "bus_speed_kmh": 49,
+    "bus_capacity": 32,
+    "bus_machine_hour_rub": 2289.73
+  },
+  "gnus": {
+    "duration_months": 10.5,
+    "workers": 68,
+    "summer_months": 4.5,
+    "hat_rub": 63.89,
+    "repellent_rub": 990,
+    "after_bite_balm_rub": 339.17,
+    "seasons": 1
+  },
+  "electricity_legacy_sheet": {
+    "consumption_total_kwh": 4206524.37316,
+    "diesel_generation_kwh": 455683.23,
+    "already_costed_kwh": 106865.696,
+    "grid_price_rub_per_kwh": 3.08,
+    "diesel_machine_hour_rub": 1120.56,
+    "diesel_power_kw": 100
+  }
+}
+

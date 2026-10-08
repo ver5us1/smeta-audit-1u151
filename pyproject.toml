@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smeta-audit-1u151"
+version = "0.1.0"
+description = "Воспроизводимый Python-анализ проверки проектно-сметной документации по объекту 1У-151"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.7",
+  "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jupyter>=1.0",
+  "nbclient>=0.8",
+  "nbformat>=5.9",
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+smeta-audit = "smeta_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E402", "E501"]
